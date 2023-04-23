@@ -130,7 +130,7 @@ def load_data(match_type, team1, team2, sort_type):
 players_stats = load_data(selected_type, team1, team2, sort_type)
 
 st.markdown(f"## **{selected_type} Players Stats of selected Teams**")
-st.dataframe(players_stats)
+st.dataframe(players_stats,False)
 
 def file_download(df):
     csv = df.to_csv(index = False)
